@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Color Palette Generator</title>
+        <link href="./index.css" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <div class="options-container">
+                <select id="base-color">
+                    <option value = "rgb(255, 0, 0)" style="background-color: red"></option>
+                    <option value = "rgb(255, 165, 0)" style="background-color: orange"></option>
+                    <option value = "rgb(255, 255, 0)" style="background-color: yellow"></option>
+                    <option value = "rgb(0, 128, 0)" style="background-color: green"></option>
+                    <option value = "rgb(0, 0, 255)" style="background-color: blue"></option>
+                    <option value = "rgb(75, 0, 130)" style="background-color: indigo"></option>
+                    <option value = "rgb(238, 130, 238)" style="background-color: violet"></option>
+                    <option value = "rgb(255, 192, 203)" style="background-color: pink"></option>
+                    <option value = "rgb(165, 42, 42)" style="background-color: brown"></option>
+                    <option value = "rgb(128, 128, 128)" style="background-color: grey"></option>
+                    <option value = "rgb(0, 0, 0)" style="background-color: black"></option>
+                    <option value = "rgb(255, 255, 255)" style="background-color: white"></option>
+                </select>
+                <select id="scheme-select">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                </select>
+                <button id="scheme-btn">Get color scheme</button>
+            </div>
+                <img id="palette-img" src="">
+            <div id="palette-container">
+                <!-- JS inserting here -->
+            </div>
+        </main>
+        <script src="./index.js"></script>
+    </body>
+</html>
+
+
+
+<!-- TOMORROW TEST BY SETTING <option value={}>  ELEMENTS TO THE HARD-CODED RGB VALUE, THEN SEND THAT VALUE TO THE API -->
+
+
+
+<!-- TEST CODE TO HAVE A SELECTABLE COLOR INSTEAD OF HARD-CODING THE ** ..."base-color" style="background-color: " ** value
+    COULDN'T GET ** baseColor.style.backgroundColor
+                <select id="base-color">
+                    <option value = "red" style="background-color: red"></option>
+                    <option value = "orange" style="background-color: orange"></option>
+                    <option value = "yellow" style="background-color: yellow"></option>
+                    <option value = "green" style="background-color: green"></option>
+                    <option value = "blue" style="background-color: blue"></option>
+                    <option value = "indigo" style="background-color: indigo"></option>
+                    <option value = "violet" style="background-color: violet"></option>
+                    <option value = "pink" style="background-color: pink"></option>
+                    <option value = "brown" style="background-color: brown"></option>
+                    <option value = "grey" style="background-color: grey"></option>
+                    <option value = "black" style="background-color: black"></option>
+                    <option value = "white" style="background-color: white"></option>
+                </select> -->
